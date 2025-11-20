@@ -1,40 +1,50 @@
-# Proxmox
-
-TABLE DES MATIÈRES
-
-Version 9.1.1
-  └── Supprimer le message (popup) lors de la connexion sans abonnement
+██████████████████████████████████████████████████████████
+█                         PROXMOX                        █
+██████████████████████████████████████████████████████████
 
 
+========================================
+           TABLE DES MATIÈRES
+========================================
 
-Version 9.1.1
+[ Version 9.1.1 ]
+  └─ Supprimer le message (popup) lors de la connexion sans abonnement
+
+
+============================================================
+                    VERSION 9.1.1
+============================================================
 
 Titre :
 Supprimer le message (popup) lors de la connexion sans abonnement
 
---------------------------------------------------
 
-Objectif :
+🎯 Objectif
+------------------------------------------------------------
 Supprimer le message (popup) affiché lors de la connexion
-à l’interface web Proxmox sans abonnement.
+à l’interface web Proxmox lorsqu’aucun abonnement n’est présent.
 
-Fichier :
+
+📁 Fichier concerné
+------------------------------------------------------------
 /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js
 
---------------------------------------------------
 
-Procédure :
+🛠 Procédure
+------------------------------------------------------------
 
-1. Remplacer le fichier proxmoxlib.js par la version modifiée.
+1) Remplacer le fichier proxmoxlib.js par votre version modifiée.
 
-2. Redémarrer le service web Proxmox :
+2) Redémarrer le service web Proxmox :
 
    systemctl restart pveproxy
 
---------------------------------------------------
 
-Pour annuler la modification :
+↩ Restauration (annuler la modification)
+------------------------------------------------------------
+
+Pour revenir au fichier d’origine :
 
    apt-get install --reinstall proxmox-widget-toolkit
 
---------------------------------------------------
+
