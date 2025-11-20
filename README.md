@@ -1,16 +1,13 @@
 # Proxmox
 
-==================================================
 TABLE DES MATIÈRES
-==================================================
 
 Version 9.1.1
   └── Supprimer le message (popup) lors de la connexion sans abonnement
 
 
-==================================================
+
 Version 9.1.1
-==================================================
 
 Titre :
 Supprimer le message (popup) lors de la connexion sans abonnement
